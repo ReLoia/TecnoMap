@@ -1,15 +1,12 @@
-package it.reloia.tecnomap.client.utils;
+package it.reloia.tecnomap.client.httpserver;
 
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.util.math.Vec3d;
+import it.reloia.tecnomap.client.httpserver.path.AnyHandler;
+import it.reloia.tecnomap.client.httpserver.path.PositionHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
@@ -19,7 +16,10 @@ public class PlayerPositionServer {
     public void start() {
         try {
             HttpServer server = HttpServer.create(new InetSocketAddress(8998), 0);
+            
             server.createContext("/position", new PositionHandler());
+            server.createContext("/", new AnyHandler());
+            
             server.setExecutor(Executors.newCachedThreadPool());
             server.start();
             LOGGER.info("HTTP server started on port 8998");
