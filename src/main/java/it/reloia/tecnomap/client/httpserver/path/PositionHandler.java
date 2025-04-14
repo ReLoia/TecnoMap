@@ -2,6 +2,7 @@ package it.reloia.tecnomap.client.httpserver.path;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import it.reloia.tecnomap.dataparsing.TecnoData;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.Vec3d;
 
@@ -15,6 +16,11 @@ public class PositionHandler implements HttpHandler {
             try {
                 MinecraftClient client = MinecraftClient.getInstance();
                 assert client.player != null;
+                
+                if (!TecnoData.INSTANCE.isInTecnoRoleplay) {
+                     throw new Exception("Not in TecnoRoleplay");
+                }
+                
                 Vec3d playerPos = client.player.getPos();
 
                 String response = String.format("""

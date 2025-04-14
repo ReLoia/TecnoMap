@@ -42,8 +42,6 @@ public class AnyHandler implements HttpHandler {
         }
         
         Identifier id = new Identifier("tecnomap", "web" + requestPath);
-        
-        System.out.println(id);
 
         Optional<Resource> optionalResource = resourceManager.getResource(id);
         
