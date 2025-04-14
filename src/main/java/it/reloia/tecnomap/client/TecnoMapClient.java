@@ -1,6 +1,6 @@
 package it.reloia.tecnomap.client;
 
-import it.reloia.tecnomap.client.utils.PlayerPositionServer;
+import it.reloia.tecnomap.client.httpserver.PlayerPositionServer;
 import net.fabricmc.api.ClientModInitializer;
 
 public class TecnoMapClient implements ClientModInitializer {
