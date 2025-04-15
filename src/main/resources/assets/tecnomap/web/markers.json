@@ -1,0 +1,108 @@
+{
+  "structures-marker-set": {
+    "label": "Structures",
+    "toggleable": true,
+    "defaultHidden": false,
+    "sorting": 0,
+    "markers": {
+      "central-square": {
+        "shape": [
+          {
+            "x": -580,
+            "z": 65
+          },
+          {
+            "x": -580,
+            "z": -52
+          },
+          {
+            "x": -460,
+            "z": -52
+          },
+          {
+            "x": -460,
+            "z": 65
+          }
+        ],
+        "holes": [],
+        "shapeY": 64.0,
+        "depthTest": false,
+        "lineWidth": 2,
+        "lineColor": {
+          "r": 25,
+          "g": 250,
+          "b": 0,
+          "a": 1.0
+        },
+        "fillColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.0
+        },
+        "detail": "Central Square",
+        "newTab": false,
+        "minDistance": 0.0,
+        "maxDistance": 1.0E7,
+        "type": "shape",
+        "label": "Central Square",
+        "position": {
+          "x": -460,
+          "y": 65,
+          "z": -52
+        },
+        "sorting": 0,
+        "listed": true
+      },
+      "ikea": {
+        "shape": [
+          {
+            "x": -431,
+            "z": 145
+          },
+          {
+            "x": -431,
+            "z": 95
+          },
+          {
+            "x": -381,
+            "z": 95
+          },
+          {
+            "x": -381,
+            "z": 145
+          }
+        ],
+        "holes": [],
+        "shapeY": 65.0,
+        "depthTest": false,
+        "lineWidth": 2,
+        "lineColor": {
+          "r": 25,
+          "g": 250,
+          "b": 0,
+          "a": 1.0
+        },
+        "fillColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0.0
+        },
+        "detail": "IKEA",
+        "newTab": false,
+        "minDistance": 0.0,
+        "maxDistance": 1.0E7,
+        "type": "shape",
+        "label": "IKEA",
+        "position": {
+          "x": -381,
+          "y": 65,
+          "z": 95
+        },
+        "sorting": 1,
+        "listed": true
+      }
+    }
+  }
+}

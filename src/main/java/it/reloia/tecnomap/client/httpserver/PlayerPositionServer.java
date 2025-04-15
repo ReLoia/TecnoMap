@@ -2,6 +2,7 @@ package it.reloia.tecnomap.client.httpserver;
 
 import com.sun.net.httpserver.HttpServer;
 import it.reloia.tecnomap.client.httpserver.path.AnyHandler;
+import it.reloia.tecnomap.client.httpserver.path.MarkerHandler;
 import it.reloia.tecnomap.client.httpserver.path.PositionHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class PlayerPositionServer {
             HttpServer server = HttpServer.create(new InetSocketAddress(8998), 0);
             
             server.createContext("/position", new PositionHandler());
+            server.createContext("/markers", new MarkerHandler());
             server.createContext("/", new AnyHandler());
             
             server.setExecutor(Executors.newCachedThreadPool());
