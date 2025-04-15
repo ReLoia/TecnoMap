@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TecnoMap Extension",
   "version": "1.0.0",
-  "description": "An extension that redirects some BlueMap requests to your game to get your personal data.",
+  "description": "An extension that redirects some BlueMap requests to your game to display your personal data.",
   "permissions": [
     "activeTab"
   ],
