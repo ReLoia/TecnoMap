@@ -1,9 +1,9 @@
-package it.reloia.tecnomap.client.httpserver;
+package it.reloia.tecnomap.httpserver;
 
 import com.sun.net.httpserver.HttpServer;
-import it.reloia.tecnomap.client.httpserver.path.AnyHandler;
-import it.reloia.tecnomap.client.httpserver.path.MarkerHandler;
-import it.reloia.tecnomap.client.httpserver.path.PositionHandler;
+import it.reloia.tecnomap.httpserver.path.AnyHandler;
+import it.reloia.tecnomap.httpserver.path.MarkerHandler;
+import it.reloia.tecnomap.httpserver.path.PositionHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

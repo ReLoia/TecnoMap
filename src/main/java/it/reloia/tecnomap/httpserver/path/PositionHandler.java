@@ -1,4 +1,4 @@
-package it.reloia.tecnomap.client.httpserver.path;
+package it.reloia.tecnomap.httpserver.path;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
