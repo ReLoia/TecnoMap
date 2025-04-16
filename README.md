@@ -12,6 +12,27 @@ TecnoMap operates by running a lightweight HTTP REST server directly from your M
     * Pre-configured markers
 3.  **Web Map Integration:** The data served by TecnoMap will then be fetched using TecnoMap Extension from the web map at [https://mappa.tecnocraft.net/](https://mappa.tecnocraft.net/), allowing you to visualize your Minecraft world in real-time.
 
+### Player Position
+You will see your real-time position on the map. The coordinates are updated every second.
+
+### Markers
+Currently these are the marked locations:
+- Parco Centrale
+- IKEA
+- Legione Carabinieri
+- Palazzo Sant'Ayama
+- Palazzo di Giustizia
+- Banca
+- Scuola
+- Galleria D. Baffoni
+- Purissima
+- Giornalaio
+- Caserma Vigili del Fuoco
+- Case Popolari
+
+****
+**See the screenshot and video below for a preview of the map and the markers.**
+
 ## Installation (Minecraft Mod)
 
 *(Please adapt this section based on your mod loader and distribution method)*
@@ -41,3 +62,8 @@ To enable the web map ([https://mappa.tecnocraft.net/](https://mappa.tecnocraft.
 3.  Navigate to [https://mappa.tecnocraft.net/](https://mappa.tecnocraft.net/).
 4.  The web map, through the extension, should automatically attempt to connect to the TecnoMap server running on `http://localhost:8998`.
 5.  If successful, you should see your live player position and any configured markers appear on the map.
+
+## Screenshots
+
+![TecnoMap Screenshot](https://hc-cdn.hel1.your-objectstorage.com/s/v3/725d79a5e95e260b25c579c2f9cd468add682290_screenshot_2025-04-16_at_00-13-00_bluemap_-_neotecno-victoria.png)
+<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8a239ae1fcde29a8b65c34fa162b65e9e9621c41_tecnomappa.mp4" controls>
