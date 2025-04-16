@@ -1,9 +1,12 @@
 package it.reloia.tecnomap.httpserver;
 
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import it.reloia.tecnomap.httpserver.path.AnyHandler;
-import it.reloia.tecnomap.httpserver.path.MarkerHandler;
+import it.reloia.tecnomap.httpserver.path.DynamicMarkerHandler;
 import it.reloia.tecnomap.httpserver.path.PositionHandler;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +22,7 @@ public class PlayerPositionServer {
             HttpServer server = HttpServer.create(new InetSocketAddress(8998), 0);
             
             server.createContext("/position", new PositionHandler());
-            server.createContext("/markers", new MarkerHandler());
+            server.createContext("/markers", new DynamicMarkerHandler());
             server.createContext("/", new AnyHandler());
             
             server.setExecutor(Executors.newCachedThreadPool());
