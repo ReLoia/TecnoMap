@@ -66,4 +66,4 @@ To enable the web map ([https://mappa.tecnocraft.net/](https://mappa.tecnocraft.
 ## Screenshots
 
 ![TecnoMap Screenshot](https://hc-cdn.hel1.your-objectstorage.com/s/v3/725d79a5e95e260b25c579c2f9cd468add682290_screenshot_2025-04-16_at_00-13-00_bluemap_-_neotecno-victoria.png)
-<video src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8a239ae1fcde29a8b65c34fa162b65e9e9621c41_tecnomappa.mp4" controls>
+https://hc-cdn.hel1.your-objectstorage.com/s/v3/8a239ae1fcde29a8b65c34fa162b65e9e9621c41_tecnomappa.mp4
