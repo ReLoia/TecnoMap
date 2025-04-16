@@ -1,12 +1,9 @@
 package it.reloia.tecnomap.httpserver;
 
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import it.reloia.tecnomap.httpserver.path.AnyHandler;
 import it.reloia.tecnomap.httpserver.path.DynamicMarkerHandler;
 import it.reloia.tecnomap.httpserver.path.PositionHandler;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +11,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
-public class PlayerPositionServer {
+public class TecnoMapServer {
     public static final Logger LOGGER = LoggerFactory.getLogger("player-position-server");
 
     public void start() {

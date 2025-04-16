@@ -1,7 +1,7 @@
 package it.reloia.tecnomap.client;
 
 import it.reloia.tecnomap.client.commands.InfoCommand;
-import it.reloia.tecnomap.httpserver.PlayerPositionServer;
+import it.reloia.tecnomap.httpserver.TecnoMapServer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -9,7 +9,7 @@ import it.reloia.tecnomap.dataparsing.TecnoData;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 
 public class TecnoMapClient implements ClientModInitializer {
-    PlayerPositionServer playerPositionServer = new PlayerPositionServer();
+    TecnoMapServer tecnoMapServer = new TecnoMapServer();
 
     @Override
     public void onInitializeClient() {
@@ -26,7 +26,7 @@ public class TecnoMapClient implements ClientModInitializer {
                 TecnoData.INSTANCE.tick();
         });
         
-        playerPositionServer.start();
+        tecnoMapServer.start();
 
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> {
             InfoCommand.register(dispatcher);
