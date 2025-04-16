@@ -40,6 +40,10 @@ public class AnyHandler implements HttpHandler {
             exchange.sendResponseHeaders(403, -1);
             return;
         }
+
+        if (requestPath.equals("/icon.png")) {
+            requestPath = "/../icon.png";
+        }
         
         Identifier id = new Identifier("tecnomap", "web" + requestPath);
 
