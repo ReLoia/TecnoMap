@@ -56,7 +56,7 @@ public class DynamicMarkerHandler implements HttpHandler {
         Map<String, MarkersDataSet> markerData = new HashMap<>();
 
         markerData.put("public-structures-marker-set", staticMarkerSets.getPublicStructures());
-        markerData.put("private-structures-marker-set", staticMarkerSets.getPrivateStructures());
+//        markerData.put("private-structures-marker-set", staticMarkerSets.getPrivateStructures());
         
         return markerData;
     }

@@ -1,7 +1,5 @@
 package it.reloia.tecnomap.dataparsing;
 
-import it.reloia.tecnomap.dataparsing.data.SidebarData;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -40,19 +38,12 @@ public class TecnoData {
         if ((mainTick - TICK_THRESHOLD) % ONE_SECOND == 0) {
             fetchSidebarLines();
             checkIfInTecnoRoleplay();
-            if (inAServer && isInTecnoRoleplay && sidebarLines.size() >= 14)
-                sidebarData = SidebarData.fromLines(sidebarLines);
         }
 
         if (mainTick == 0)
             tickCounter.put("main", TICK_THRESHOLD);
 
         tickAll();
-    }
-
-    private SidebarData sidebarData = null;
-    public SidebarData getSidebarData() {
-        return sidebarData;
     }
 
     private List<String> sidebarLines = Collections.emptyList();
@@ -63,7 +54,6 @@ public class TecnoData {
 
     public boolean inAServer = false;
     public boolean isInTecnoRoleplay = false;
-    public boolean isHUDEnabled = true;
 
     private void checkIfInTecnoRoleplay() {
         if (sidebarLines.size() >= 3) {
