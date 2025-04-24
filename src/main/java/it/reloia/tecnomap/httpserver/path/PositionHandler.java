@@ -8,6 +8,7 @@ import net.minecraft.util.math.Vec3d;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Locale;
 
 public class PositionHandler implements HttpHandler {
     @Override
@@ -22,8 +23,9 @@ public class PositionHandler implements HttpHandler {
                 }
                 
                 Vec3d playerPos = client.player.getPos();
-
-                String response = String.format("""
+                
+                // Locale is used to ensure the decimal separator is a dot
+                String response = String.format(Locale.US, """
                         {
                           "players": [{
                             "uuid": "%s",
